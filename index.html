@@ -3,10 +3,37 @@
 <html>
     <header>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock-Paper-Scissors</title>
+        <link rel="stylesheet" href="./styles.css"></link>
         <script src="./rock-paper-scissors.js"></script>
     </header>
     <body>
-
+        <div id="title">
+            <h1>Rock Paper Scissors?</h1>
+        </div>
+        <div class="playArea">
+            <div class="score">
+                <h2 id="ps">Player: 0</h2>
+                <h2 id="as">AI: 0</h2>
+            </div>
+            <div class="imgs">
+                <div class="choice">
+                    <img id="playerRock" src="./Images/artworks-I5cHGC15BENavkf0-YCJgNw-t500x500.jpg">
+                    <h4>'The' Rock!</h4>
+                </div>
+                <div class="choice">
+                    <img id="playerPaper" src="./Images/printing-paper-500x500.jpg">
+                    <h4>Paper</h4>
+                </div>
+                <div class="choice">
+                    <img id="playerScissors" src="./Images/dahle-papierscheren-500x500px.png">
+                    <h4>Scissors</h4>
+                </div>
+            </div>
+            <p>Make your choice!</p>
+        </div>
+        <h3>--- The Odin Project --- 19th of August 2022 --- </h3>
     </body>
 </html>
