@@ -5,7 +5,12 @@ img {
     width: 200px;
 }
 
+#playerRock:hover, #playerPaper:hover, #playerScissors:hover{
+    border-color: darkgray;
+}
+
 #title {
+    flex-shrink: 0;
     text-align: center;
     font-style: italic;
     font-size: 30px;
@@ -19,7 +24,7 @@ img {
     padding: 15px;
 }
 
-h3 {
+footer {
     height: 25px;
     background-color: lightslategrey;
     width: 100vw;
@@ -29,14 +34,23 @@ h3 {
     flex-shrink: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: linen;
-    font-family: cursive;
+    font-family: fantasy;
+    font-weight: 900;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     margin: 0%;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+}
+
+.playArea {
+    flex: 1 0 auto;
 }
 
 .imgs {
@@ -45,6 +59,7 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 25px;
+    padding-bottom: 100px;
 }
 
 .choice {
